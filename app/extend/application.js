@@ -17,12 +17,9 @@ module.exports = {
   get opentracing() {
     return opentracing;
   },
-  startSpan(name, tags) {
+  startSpan(name, tags = {}) {
     const childOf = als.get('span');
-    const span = this.jaeger.startSpan(name, childOf ? { childOf } : { });
-    if (tags) {
-      span.addTags(tags);
-    }
+    const span = this.jaeger.startSpan(name, childOf ? { childOf, tags } : { tags });
     als.set('span', span);
     return span;
   },
