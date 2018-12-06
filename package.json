@@ -1,0 +1,20 @@
+{
+  "name": "egg-jaeger",
+  "version": "1.0.0",
+  "description": "",
+  "eggPlugin": {
+    "name": "jaeger",
+    "optionalDependencies": [
+      "sequelize"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sqlwwx <wwx_2012@live.com> (http://wiki.lab.wuweixing.com)",
+  "license": "MIT",
+  "dependencies": {
+    "async-local-storage": "^2.0.0",
+    "jaeger-client": "^3.13.0"
+  }
+}
