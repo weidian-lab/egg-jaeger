@@ -1,6 +1,6 @@
 {
   "name": "egg-jaeger",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "eggPlugin": {
     "name": "jaeger",
@@ -14,7 +14,7 @@
   "author": "sqlwwx <wwx_2012@live.com> (http://wiki.lab.wuweixing.com)",
   "license": "MIT",
   "dependencies": {
-    "async-local-storage": "^2.0.0",
+    "async-local-storage": "github:sqlwwx/async-local-storage#7a5f7d1",
     "jaeger-client": "^3.13.0"
   }
 }
