@@ -3,6 +3,7 @@
 const als = require('async-local-storage');
 
 module.exports = (options, app) => async function jaegerMiddleware(ctx, next) {
+  als.scope()
   const span = app.startSpan(ctx.path);
   span.setTag('requestMethod', ctx.method);
   als.set('span', span);
