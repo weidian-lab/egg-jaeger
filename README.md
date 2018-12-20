@@ -1,5 +1,7 @@
 # links
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/weidian-lab/egg-jaeger.svg)](https://greenkeeper.io/)
+
 https://github.com/weidian-lab/jaeger-tracer-node
 
 # tags
